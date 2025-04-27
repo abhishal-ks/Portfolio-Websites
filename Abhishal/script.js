@@ -1,7 +1,4 @@
-// This is an optional script file that you can add functionality like animations or form validation.
-// You can also handle the form submission with JavaScript if needed.
-
-// Example: A simple scroll effect to smooth scroll to sections
+// Scroll effects to smooth scroll to sections from navbar
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -12,6 +9,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
   });
 
 
+// Scroll effects to smooth scroll 'back to top'
 document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();

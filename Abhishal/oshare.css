@@ -60,16 +60,18 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 
 .home-content {
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
 }
 
 .section-about {
   background-image: url(hero-bg2.jpg);
+  min-height: 100%;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -87,8 +89,7 @@ h3 {
   align-items: center;
 }
 
-.about-content h2,
-.about-content p {
+.about-content h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
@@ -109,6 +110,7 @@ h3 {
   padding: 20px;
   width: 200px;
   border-radius: 8px;
+  box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.5);
 }
 
 .section-projects {
@@ -121,21 +123,6 @@ h3 {
 }
 
 .projects-content h2 {
-  background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
-  border-radius: 10px;
-}
-
-.section-contact {
-  background-image: url('hero-bg4.jpg');
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contact-content  h2 {
   background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
@@ -188,6 +175,21 @@ h3 {
   text-decoration: underline;
 }
 
+.section-contact {
+  background-image: url('hero-bg4.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content h2 {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
 form input,
 form textarea {
   width: 100%;
@@ -234,14 +236,22 @@ footer a:hover {
   width: 90vw;
   margin: 20px auto;
 }
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
-  .project-cards {
-    flex-direction: column;
-    align-items: center;
+
+  .skills {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, 150px);
+    gap: 10px;
   }
 
-  .section-home {
-    height: auto;
+  .skill-card {
+    width: 150px;
+    height: 170px;
+  }
+
+  .project-cards {
+    flex-direction: column;
   }
 }
