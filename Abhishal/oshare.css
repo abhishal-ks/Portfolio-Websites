@@ -5,15 +5,21 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.6;
 }
 
 header {
-  background-color: #333;
+  background-color: rgba(51, 51, 51, 0.5); /* semi-transparent */
   padding: 10px;
   position: sticky;
   top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(51, 51, 51, 1); /* solid background on scroll */
 }
 
 nav ul {
@@ -37,6 +43,12 @@ nav ul li a:hover {
   color: crimson;
 }
 
+nav a.active {
+  color: crimson;
+  font-weight: bold;
+  border-bottom: 2px solid crimson;
+}
+
 section {
   padding: 80px 20px;
   text-align: center;
@@ -44,7 +56,8 @@ section {
 
 h1 {
   color: crimson;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 h2,
@@ -65,16 +78,15 @@ h3 {
 
 .home-content {
   background: rgba(0, 0, 0, 0.7);
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 10px;
 }
 
 .section-about {
   background-image: url(hero-bg2.jpg);
-  min-height: 100%;
   background-size: cover;
   background-position: center;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -93,14 +105,16 @@ h3 {
   background: rgba(0, 0, 0, 0.7);
   padding: 2rem;
   border-radius: 10px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .skills {
   margin-top: 30px;
-  width: 90%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 250px);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 45px;
   justify-content: center;
   align-items: center;
 }
@@ -109,6 +123,7 @@ h3 {
   background-color: #f1f1f1;
   padding: 20px;
   width: 200px;
+  height: 200px;
   border-radius: 8px;
   box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.5);
 }
@@ -243,12 +258,12 @@ footer a:hover {
   .skills {
     width: 100%;
     grid-template-columns: repeat(auto-fit, 150px);
-    gap: 10px;
+    gap: 30px;
   }
 
   .skill-card {
-    width: 150px;
-    height: 170px;
+    width: 160px;
+    height: 200px;
   }
 
   .project-cards {
