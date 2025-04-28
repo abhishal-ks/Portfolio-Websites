@@ -1,3 +1,3 @@
 # Portfolio Websites
 - **Used** HTML CSS & JS
-- Look for features
+- Look inside for features

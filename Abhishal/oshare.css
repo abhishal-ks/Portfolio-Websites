@@ -82,7 +82,7 @@ h3 {
 }
 
 .section-home {
-  background-image: url('hero-bg.jpg');
+  background-image: url('BGs/hero-bg.jpg');
   background-size: cover;
   background-position: center bottom;
   height: 100vh;
@@ -99,7 +99,7 @@ h3 {
 }
 
 .section-about {
-  background-image: url(hero-bg2.jpg);
+  background-image: url(BGs/hero-bg2.jpg);
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -145,7 +145,7 @@ h3 {
 }
 
 .section-projects {
-  background-image: url('hero-bg3.jpg');
+  background-image: url('BGs/hero-bg3.jpg');
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -207,7 +207,7 @@ h3 {
 }
 
 .section-contact {
-  background-image: url('hero-bg4.jpg');
+  background-image: url('BGs/hero-bg4.jpg');
   background-size: cover;
   height: 100vh;
   display: flex;
