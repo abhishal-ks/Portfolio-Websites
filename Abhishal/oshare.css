@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  background-color: rgba(51, 51, 51, 0.5); /* semi-transparent */
+  background-color: rgba(51, 51, 51, 0.5);
+  /* semi-transparent */
   padding: 10px;
   position: sticky;
   top: 0;
@@ -19,7 +20,13 @@ header {
 }
 
 header.scrolled {
-  background-color: rgba(51, 51, 51, 1); /* solid background on scroll */
+  background-color: rgba(51, 51, 51, 1);
+  /* solid background on scroll */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
 }
 
 nav ul {
@@ -52,6 +59,15 @@ nav a.active {
 section {
   padding: 80px 20px;
   text-align: center;
+}
+
+nav h1 {
+  font-size: 22px;
+  margin-bottom: auto;
+  background-image: linear-gradient(rgb(0, 8, 255), rgb(62, 62, 139));
+  color: transparent;
+  background-clip: text;
+  text-shadow:3px 3px 0px white;
 }
 
 h1 {
@@ -254,6 +270,18 @@ footer a:hover {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  nav ul {
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 0 10px;
+    font-size: 0.5rem;
+  }
 
   .skills {
     width: 100%;
